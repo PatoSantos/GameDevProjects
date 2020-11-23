@@ -5,26 +5,36 @@ using UnityEngine;
 public class StageManager : MonoBehaviour
 {
     public GameObject fireOrb, waterOrb, windOrb, earthOrb;
+    public GameObject firePlate, waterPlate, windPlate, earthPlate;
     public GameObject[] generators = new GameObject[10];
+
+    public int orbCount;
 
     // Start is called before the first frame update
     void Start()
     {
-        
-        GenerateOrb(fireOrb);
-        GenerateOrb(waterOrb);
-        GenerateOrb(windOrb);
-        GenerateOrb(earthOrb);
-        
+        orbCount = 0;
+        Generate(fireOrb);
+        Generate(waterOrb);
+        Generate(windOrb);
+        Generate(earthOrb);
+
+        Generate(firePlate);
+        Generate(waterPlate);
+        Generate(windPlate);
+        Generate(earthPlate);
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetKeyDown("x"))
+        {
+            Debug.Log(orbCount);
+        }
     }
 
-    void GenerateOrb(GameObject orb)
+    void Generate(GameObject prefab)
     {
         RaycastHit2D raycast;
         int gen;
@@ -35,6 +45,6 @@ public class StageManager : MonoBehaviour
             LayerMask.GetMask("Orbs"));
         } while (raycast.collider != null);
         
-        Instantiate(orb, generators[gen].transform.position, Quaternion.identity);
+        Instantiate(prefab, generators[gen].transform.position, Quaternion.identity);
     }
 }

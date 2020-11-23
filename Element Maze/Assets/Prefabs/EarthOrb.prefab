@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1767245118306925765}
   - component: {fileID: 7868211576446870820}
   - component: {fileID: 1419127381366377074}
-  - component: {fileID: 4650743472376782332}
+  - component: {fileID: -4668361601773045421}
   m_Layer: 8
   m_Name: EarthOrb
   m_TagString: Untagged
@@ -100,7 +100,7 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 1, y: 1}
   m_Direction: 0
---- !u!114 &4650743472376782332
+--- !u!114 &-4668361601773045421
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -112,3 +112,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d46b6dccf6198e418eb6ea438cffcbf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  orbType: earth

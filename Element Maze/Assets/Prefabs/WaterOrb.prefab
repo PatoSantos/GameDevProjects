@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5799121037425765705}
   - component: {fileID: 5799121037425765704}
   - component: {fileID: 5799121037425765703}
-  - component: {fileID: 5799121037425765706}
+  - component: {fileID: 3112118168769731555}
   m_Layer: 8
   m_Name: WaterOrb
   m_TagString: Untagged
@@ -100,7 +100,7 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 1, y: 1}
   m_Direction: 0
---- !u!114 &5799121037425765706
+--- !u!114 &3112118168769731555
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -112,3 +112,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d46b6dccf6198e418eb6ea438cffcbf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  orbType: water

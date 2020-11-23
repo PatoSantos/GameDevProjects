@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3587463593279579659}
   - component: {fileID: 3827763384491798689}
   - component: {fileID: 7496595276509172123}
-  - component: {fileID: 3745596223806250317}
+  - component: {fileID: 8401569800342700106}
   m_Layer: 8
   m_Name: WindOrb
   m_TagString: Untagged
@@ -100,7 +100,7 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 1, y: 1}
   m_Direction: 0
---- !u!114 &3745596223806250317
+--- !u!114 &8401569800342700106
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -112,3 +112,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d46b6dccf6198e418eb6ea438cffcbf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  orbType: wind

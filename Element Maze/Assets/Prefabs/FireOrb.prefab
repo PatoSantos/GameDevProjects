@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8923264552516478882}
   - component: {fileID: 917592495447978362}
   - component: {fileID: 455819853544602530}
-  - component: {fileID: 3998203932394666175}
+  - component: {fileID: -7033813700258019559}
   m_Layer: 8
   m_Name: FireOrb
   m_TagString: Untagged
@@ -100,7 +100,7 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 1, y: 1}
   m_Direction: 0
---- !u!114 &3998203932394666175
+--- !u!114 &-7033813700258019559
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -112,3 +112,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d46b6dccf6198e418eb6ea438cffcbf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  orbType: fire
