@@ -5,23 +5,19 @@ using UnityEngine;
 public class PlateController : MonoBehaviour
 {
     public string plateType;
-    public Sprite activePlate;
-    Collider2D collider2d;
+
+    [SerializeField] Sprite activePlate;
+    private Collider2D collider2d;
+
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         collider2d = GetComponent<Collider2D>();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        string heldType = collision.gameObject.GetComponent<PlayerAController>().currentOrb;
+        string heldType = collision.gameObject.GetComponent<PlayerController>().currentOrb;
         if (heldType.Equals(plateType))
         {
             gameObject.GetComponent<SpriteRenderer>().sprite = activePlate;
